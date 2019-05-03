@@ -1,7 +1,8 @@
 import React from 'react'
 //import Logo from 'logo'
 
-export default class MainContainer extends React.Component{
+
+export default class Header extends React.Component{
 
     
             render(){
@@ -12,5 +13,3 @@ export default class MainContainer extends React.Component{
                 )
             }
         }
-        
-        
