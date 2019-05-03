@@ -1,15 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import MainContainer from './containers/MainContainer'
 
- App() {
+class App extends Component {
+  render(){
   return (
 
-    // <Header/>
-    // <Logo/>
+    <div className="App">
+        <MainContainer />
+    </div>
 
 
-  );
+    );
+  }
 }
 
 export default App;
