@@ -1,0 +1,2 @@
+class ProductBundlesController < ApplicationController
+end
