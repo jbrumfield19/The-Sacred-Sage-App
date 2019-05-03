@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
- App() {
+ class App {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,12 +40,12 @@ import './App.css';
   }
   Render(){
   return (
-
+    <
     // <Header/>
     // <Logo/>
 
 
-  );
+    );
   }
 }
 
