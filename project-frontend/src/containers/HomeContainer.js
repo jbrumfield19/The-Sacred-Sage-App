@@ -5,29 +5,29 @@ import ProductContainer from './ProductContainer'
 
 
 export default class HomeContainer extends React.Component{
-
+    state = {
+        products:[]
+    }
     
-            render(){
-                state = {
-                    products
-                }
-
-                componentDidMount() {
-                    fetch("")
-                    .then(res => res.json())
-                    .then (product => this.setState ({
-                        products: products
-                    }))
-                    }
+ render(){
                 
-                return (
-                    <div>
-                    <h1>Hello World</h1>
-                    <QuizContainer />
-                    <ProductContainer />
-                    </div>
-                )
-            }
-        }
+
+    // componentDidMount(){
+    //     fetch("")
+    //     .then(res => res.json())
+    //     .then (product => this.setState ({
+    //     products: product
+    //     }))
+    // }
+                
+    return (
+        <div>
+        <h1>Hello World</h1>
+        <QuizContainer />
+        <ProductContainer />
+        </div>
+    )
+  }
+}
         
         
