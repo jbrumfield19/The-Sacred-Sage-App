@@ -24,12 +24,35 @@ body {
   font-family: sans-serif;
 }
 
-.container {
+.main-container {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 3px;
+  text-align: center;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/116/609/non_2x/pink-violet-free-vector-watercolor-texture.jpg);
+  color: white;
+  height: 800px;
+  background-size: 100% 100%
+}
+
+.main-text {
+  position: absolute;
+  top: 36%;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85px;
+  color: #E6E6FA;
+}
+
+.cursive-text{
+  position: absolute;
+  top: 52%;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Cookie', cursive;
+  font-size: 68px;
+  color: powderblue;
 }
 
 @media (min-width: 769px) {
@@ -145,4 +168,55 @@ body {
 .fade-appear.fade-appear-active {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+}
+
+.top-font {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  color: white;
+  width: 700px;
+  height: 225px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: pink;
+  border: none;
+  color: mintcream;
+  text-align: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  top: 56%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
