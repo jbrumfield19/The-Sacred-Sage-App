@@ -6,22 +6,16 @@ import React from 'react';
           type="radio"
           className="radioCustomButton"
           name="radioGroup"
-          checked={props.answerType === props.answer}
-          id={props.answerType}
-          value={props.answerType}
+          checked={props.answer}
+          id={props.answer}
+          value={props.answer}
           disabled={props.answer}
           onChange={props.onAnswerSelected}
         />
-        <label className="radioCustomLabel" htmlFor={props.answerType}>
+        <label className="radioCustomLabel" htmlFor={props.answer}>
           {props.answerContent}
         </label>
       </li>
     );
-  }
-  AnswerOption.propTypes = {
-    answerType: React.PropTypes.string.isRequired,
-    answerContent: React.PropTypes.string.isRequired,
-    answer: React.PropTypes.string.isRequired,
-    onAnswerSelected: React.PropTypes.func.isRequired
   };
   export default AnswerOption;
