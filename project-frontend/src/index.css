@@ -133,9 +133,9 @@ body {
 
 .radioCustomButton:checked ~ .radioCustomLabel:before {
   content: '';
-  background: #8bc53f url(https://ibb.co/NLwhDF2) no-repeat;
+  background: mediumpurple url(https://ibb.co/NLwhDF2) no-repeat;
   background-size: 27px;
-  border-color: #8bc53f;
+  border-color: mediumpurple;
 }
 
 /* Animation */
