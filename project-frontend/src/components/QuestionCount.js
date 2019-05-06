@@ -1,3 +1,4 @@
+import React from 'react'
 function QuestionCount(props) {
     return (
       <div className="questionCount">

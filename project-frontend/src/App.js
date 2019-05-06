@@ -1,17 +1,18 @@
 import React,{Component} from 'react';
 import './App.css';
-import MainContainer from './containers/MainContainer'
-import QuizContainer from './containers/QuizContainer';
+import Header from './components/Header'
+import HomeContainer from './containers/HomeContainer'
 
 export default class App extends Component {
  
+   render(){
+     return(
+    <div className="App">
+        <Header/>
+        <HomeContainer />
 
- render(){
-  return (
-    <div>
-    <MainContainer />
-    <QuizContainer/>
     </div>
+     
     // <Header/>
     // <Logo/>
   )
