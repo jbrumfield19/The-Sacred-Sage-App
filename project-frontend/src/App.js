@@ -6,23 +6,24 @@ import ProductContainer from './containers/ProductContainer'
 
 import { BrowserRouter, Route } from 'react-router-dom'
 
-class App extends Component {
 
-  render(){
-  return (
+export default class App extends Component {
 
-    <div className="App">
+    render() {
+        return (
+            <div className="App">
 
-     <BrowserRouter>
-      <Route path="/home-page" component={HomeContainer}/>
-      <Route path="/quiz" component={QuizContainer}/>
-      <Route path="/product" component={ProductContainer}/>
-     </BrowserRouter>
+                <BrowserRouter>
+                    <Route path="/home-page" component={HomeContainer}/>
+                    <Route path="/quiz" component={QuizContainer}/>
+                    <Route path="/product" component={ProductContainer}/>
+                </BrowserRouter>
 
-    </div>
+            </div>
 
-    );
-  }
+        );
+    }
 }
 
-export default App;
+
+
