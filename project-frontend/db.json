@@ -4,37 +4,37 @@
   {
       "id": 1,
       "name": "The Love Bundle",
-      "description": "It looks like you need more work in the area of self-love in your life.  We would like to recommend these products to you.",
+      "description": "It looks like you need more work in the area of self-love in your life.  We would like to recommend this product to you.",
       "image":"https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg",
       "url": "https://urlzs.com/PMaA"
   },
   {
       "id": 2,
       "name": "The Relationship Bundle",
-      "description": "It looks like you need more work in the area of finances in your life. We would like to recommend these products to you.",
-      "image": "http://media.comicbook.com/uploads1/2015/08/cumbersmaug-147620.jpg",
+      "description": "It looks like you need more work in the area of finances in your life. We would like to recommend this product to you.",
+      "image": "https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg",
       "url": "https://urlzs.com/wTeC"
   },
   {
       "id": 3,
       "name": "The Finance Bundle",
-      "description": "It looks like you need more work in the area of finances in your life. We would like to recommend these products to you",
+      "description": "It looks like you need more work in the area of finances in your life. We would like to recommend this product to you",
       "image": "https://i.etsystatic.com/18675401/r/il/4c8350/1790980857/il_1588xN.1790980857_5io5.jpg",
       "url": "https://urlzs.com/C3vp"
   },
   {
       "id": 4,
       "name": "The Positivity Bundle",
-      "description": "It looks like you need more work in the area of positivity in your life. We would like to recommend these products to you.",
-      "image":"https://i.etsystatic.com/18675401/r/il/6545b3/1803420152/il_1588xN.180342015",
-      "atWar": "https://urlzs.com/YsqG"
+      "description": "It looks like you need more work in the area of positivity in your life. We would like to recommend this product to you.",
+      "image":"https://i.etsystatic.com/18675401/r/il/6545b3/1803420152/il_1588xN.1803420152_c1ew.jpg",
+      "url": "https://urlzs.com/YsqG"
   },
   {
     "id": 5,
     "name": "The Protection Bundle",
-    "description": "It looks like you need more work in the area of protection in your life. We would like to recommend these products to you.",
+    "description": "It looks like you need more work in the area of protection in your life. We would like to recommend this product to you.",
     "image":"https://i.etsystatic.com/18675401/r/il/d5c783/1790965753/il_1588xN.1790965753_79b0.jpg",
-    "atWar": "https://urlzs.com/QZ84"
+    "url": "https://urlzs.com/QZ84"
   }
   ]
   }
