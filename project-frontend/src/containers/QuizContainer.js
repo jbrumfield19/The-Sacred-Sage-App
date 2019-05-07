@@ -79,7 +79,7 @@ React.Component{
 renderQuiz(){
     // console.log(quizQuestions[0].answers[0].type)
     return(
-    <div className="quizlist">
+    <div className="quiz-list">
     
     <QuizCard content={this.state.question} answer={this.state.answer}
     answerType={this.state.answerOptions.type}
