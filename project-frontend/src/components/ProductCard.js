@@ -5,6 +5,7 @@ import React from 'react';
 export default class ProductCard extends React.Component{
 
     render(){
+        //const product= this.props.getBundle()
         return(
             <div>
                 <h3>We Recommend that you purchase</h3>

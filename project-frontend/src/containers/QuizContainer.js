@@ -12,11 +12,11 @@ React.Component{
           answerOptions: [],
           answer: '',
           answersCount: {
-            'self love': 0,
-            'better relationships': 0,
-            'finances': 0,
-            'positive energy':0,
-            'protection':0
+            1: 0,
+            2: 0,
+            3: 0,
+            4:0,
+            5:0
           },
           result: '' 
          
