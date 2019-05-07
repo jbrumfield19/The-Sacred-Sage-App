@@ -1,17 +1,19 @@
 import React from 'react';
   function AnswerOption(props) {
-    console.log(props.answer.type)
+    //console.log(props.answer)
     return (
-      <li className="answerOption">
+      <li className="answerOption" onClick={() => props.onAnswerSelected(props)}>
         <input
           type="radio"
           className="radioCustomButton"
           // name={props.answer.type}
-          checked={props.answerType}
+          checked={props.answer.type===props.answer}
           // id={props.answer.type}
-          value={props.answer.type}
+          value={props.answer}
+          
+
           // disabled={props.answer}
-          onChange={(event) => props.onAnswerSelected(event)}
+          
         ></input>
         <label className="radioCustomLabel" htmlFor={props.answer} >
           {props.answerContent}

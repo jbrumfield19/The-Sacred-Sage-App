@@ -3,9 +3,10 @@ import QuestionCount from './QuestionCount'
 import AnswerOption from './AnswerOption';
   function QuizCard(props) {
       function renderAnswerOptions(key){
+        //console.log(key)
           return(
-              <AnswerOption key={key.content} answerContent={key.content} answer={props.answer}
-              questionId={props.questionId} onAnswerSelected={props.onAnswerSelected} type={props.type}/>
+              <AnswerOption key={key.content} answerContent={key.content} answer={key.type}
+              questionId={props.questionId} onAnswerSelected={props.onAnswerSelected} />
           )
       }
     return (

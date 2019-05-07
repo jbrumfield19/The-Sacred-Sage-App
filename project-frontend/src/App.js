@@ -12,13 +12,12 @@ export default class App extends Component {
     render() {
         return (
             <div className="App">
-
                 <BrowserRouter>
                     <Route path="/home-page" component={HomeContainer}/>
                     <Route path="/quiz" component={QuizContainer}/>
                     <Route path="/product" component={ProductContainer}/>
                 </BrowserRouter>
-
+              <QuizContainer />
             </div>
 
         );
