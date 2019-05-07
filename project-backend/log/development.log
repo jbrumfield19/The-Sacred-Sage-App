@@ -1,0 +1,297 @@
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateUsers (20190502211029)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211029_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211029"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateResults (20190502211034)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211034"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateProductBundles (20190502211042)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "product_bundles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "url" varchar, "image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211042_create_product_bundles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211042"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-02 21:22:18.511224"], ["updated_at", "2019-05-02 21:22:18.511224"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateUsers (20190502211029)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211029_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211029"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateResults (20190502211034)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar, "user_id" integer, "product_bundle_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_results_on_user_id" ON "results" ("user_id")[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_results_on_product_bundle_id" ON "results" ("product_bundle_id")[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211034"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateProductBundles (20190502211042)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "product_bundles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "url" varchar, "image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211042_create_product_bundles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211042"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Create (10.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-02 21:28:58.613895"], ["updated_at", "2019-05-02 21:28:58.613895"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:41:58.746117"], ["updated_at", "2019-05-02 22:41:58.746117"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:41:58.751918"], ["updated_at", "2019-05-02 22:41:58.751918"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:41:58.755104"], ["updated_at", "2019-05-02 22:41:58.755104"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:41:58.758797"], ["updated_at", "2019-05-02 22:41:58.758797"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:41:58.762097"], ["updated_at", "2019-05-02 22:41:58.762097"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mProductBundle Create (1.2ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Love Bundle"], ["description", "It looks like you need more work in the area of self-love in your life.  We would like to recommend these products to you."], ["url", "https://urlzs.com/PMaA"], ["image", "https://i.etsystatic.com/18675401/r/il/17108d/1790949891/il_1588xN.1790949891_ndjd.jpg"], ["created_at", "2019-05-02 22:41:58.776284"], ["updated_at", "2019-05-02 22:41:58.776284"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Relationship"], ["description", "It looks like you need healthier relationships in your life. We would like to recommend these products to you."], ["url", ": https://urlzs.com/wTeC"], ["image", "https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg"], ["created_at", "2019-05-02 22:41:58.781244"], ["updated_at", "2019-05-02 22:41:58.781244"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Finances"], ["description", "It looks like you need more work in the area of finances in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/C3vp"], ["image", "https://i.etsystatic.com/18675401/r/il/4c8350/1790980857/il_1588xN.1790980857_5io5.jpg"], ["created_at", "2019-05-02 22:41:58.785150"], ["updated_at", "2019-05-02 22:41:58.785150"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Positivity"], ["description", "It looks like you need more work in the area of positivity in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/YsqG"], ["image", "https://i.etsystatic.com/18675401/r/il/6545b3/1803420152/il_1588xN.180342015"], ["created_at", "2019-05-02 22:41:58.788428"], ["updated_at", "2019-05-02 22:41:58.788428"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Protection"], ["description", "It looks like you need more work in the area of protection in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/QZ84"], ["image", "https://i.etsystatic.com/18675401/r/il/d5c783/1790965753/il_1588xN.1790965753_79b0.jpg"], ["created_at", "2019-05-02 22:41:58.791788"], ["updated_at", "2019-05-02 22:41:58.791788"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateUsers (20190502211029)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211029_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211029"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateResults (20190502211034)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "category" varchar, "user_id" integer, "product_bundle_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_results_on_user_id" ON "results" ("user_id")[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_results_on_product_bundle_id" ON "results" ("product_bundle_id")[0m
+  ↳ db/migrate/20190502211034_create_results.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211034"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+Migrating to CreateProductBundles (20190502211042)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "product_bundles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "url" varchar, "image" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190502211042_create_product_bundles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190502211042"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-02 22:45:24.845101"], ["updated_at", "2019-05-02 22:45:24.845101"]]
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oliviaauzenne/.rvm/gems/ruby-2.6.1/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:45:32.527764"], ["updated_at", "2019-05-02 22:45:32.527764"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:45:32.535013"], ["updated_at", "2019-05-02 22:45:32.535013"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:45:32.538796"], ["updated_at", "2019-05-02 22:45:32.538796"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:45:32.542588"], ["updated_at", "2019-05-02 22:45:32.542588"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-05-02 22:45:32.546429"], ["updated_at", "2019-05-02 22:45:32.546429"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mProductBundle Create (0.7ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Love Bundle"], ["description", "It looks like you need more work in the area of self-love in your life.  We would like to recommend these products to you."], ["url", "https://urlzs.com/PMaA"], ["image", "https://i.etsystatic.com/18675401/r/il/17108d/1790949891/il_1588xN.1790949891_ndjd.jpg"], ["created_at", "2019-05-02 22:45:32.559956"], ["updated_at", "2019-05-02 22:45:32.559956"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Relationship Bundle"], ["description", "It looks like you need healthier relationships in your life. We would like to recommend these products to you."], ["url", ": https://urlzs.com/wTeC"], ["image", "https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg"], ["created_at", "2019-05-02 22:45:32.563879"], ["updated_at", "2019-05-02 22:45:32.563879"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Finance Bundle"], ["description", "It looks like you need more work in the area of finances in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/C3vp"], ["image", "https://i.etsystatic.com/18675401/r/il/4c8350/1790980857/il_1588xN.1790980857_5io5.jpg"], ["created_at", "2019-05-02 22:45:32.567890"], ["updated_at", "2019-05-02 22:45:32.567890"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Positivity Bundle"], ["description", "It looks like you need more work in the area of positivity in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/YsqG"], ["image", "https://i.etsystatic.com/18675401/r/il/6545b3/1803420152/il_1588xN.180342015"], ["created_at", "2019-05-02 22:45:32.571346"], ["updated_at", "2019-05-02 22:45:32.571346"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mProductBundle Create (0.4ms)[0m  [1m[32mINSERT INTO "product_bundles" ("name", "description", "url", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "The Protection Bundle"], ["description", "It looks like you need more work in the area of protection in your life. We would like to recommend these products to you."], ["url", "https://urlzs.com/QZ84"], ["image", "https://i.etsystatic.com/18675401/r/il/d5c783/1790965753/il_1588xN.1790965753_79b0.jpg"], ["created_at", "2019-05-02 22:45:32.575350"], ["updated_at", "2019-05-02 22:45:32.575350"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mResult Create (1.8ms)[0m  [1m[32mINSERT INTO "results" ("category", "user_id", "product_bundle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "Love"], ["user_id", 1], ["product_bundle_id", 1], ["created_at", "2019-05-02 22:45:32.602749"], ["updated_at", "2019-05-02 22:45:32.602749"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mResult Create (0.5ms)[0m  [1m[32mINSERT INTO "results" ("category", "user_id", "product_bundle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "Relationship"], ["user_id", 2], ["product_bundle_id", 2], ["created_at", "2019-05-02 22:45:32.609193"], ["updated_at", "2019-05-02 22:45:32.609193"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mResult Create (0.5ms)[0m  [1m[32mINSERT INTO "results" ("category", "user_id", "product_bundle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "Finance"], ["user_id", 3], ["product_bundle_id", 3], ["created_at", "2019-05-02 22:45:32.612841"], ["updated_at", "2019-05-02 22:45:32.612841"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mResult Create (0.4ms)[0m  [1m[32mINSERT INTO "results" ("category", "user_id", "product_bundle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "Positivity"], ["user_id", 4], ["product_bundle_id", 4], ["created_at", "2019-05-02 22:45:32.616813"], ["updated_at", "2019-05-02 22:45:32.616813"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mResult Create (0.6ms)[0m  [1m[32mINSERT INTO "results" ("category", "user_id", "product_bundle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "Protection"], ["user_id", 5], ["product_bundle_id", 5], ["created_at", "2019-05-02 22:45:32.635964"], ["updated_at", "2019-05-02 22:45:32.635964"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25

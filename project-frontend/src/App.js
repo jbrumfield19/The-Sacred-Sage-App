@@ -12,13 +12,13 @@ export default class App extends Component {
 }
 
 
-componentDidMount(){
-fetch("http://localhost:3000/ProductBundle")
-    .then( res => res.json())
-    .then( products => this.setState({
-    products: products
-}))
-}
+// componentDidMount(){
+// fetch("http://localhost:3000/ProductBundle")
+//     .then( res => res.json())
+//     .then( products => this.setState({
+//     products: products
+// }))
+// }
 
 
         

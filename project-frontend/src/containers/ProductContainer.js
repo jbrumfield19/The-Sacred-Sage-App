@@ -7,11 +7,13 @@ export default class ProductContainer extends React.Component{
     
     render(){
         return(
+
             this.props.allProducts.map(products => (
-                <ProductCard 
+                <ProductCard className="productBundle"
                 {...products}/>
-            ))
-            
+            )
+    )
+
         )
     }
 }
