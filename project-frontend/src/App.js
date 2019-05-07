@@ -28,13 +28,12 @@ fetch("http://localhost:3000/ProductBundle")
       let allProducts = this.state.products
         return (
             <div className="App">
-
                 <BrowserRouter>
                     <Route path="/home-page" component={HomeContainer}/>
                     <Route path="/quiz" component={QuizContainer}/>
                     <Route path="/product" component={ProductContainer}/>
                 </BrowserRouter>
-
+              <QuizContainer />
             </div>
 
         );
