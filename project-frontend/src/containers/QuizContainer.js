@@ -1,5 +1,4 @@
 import React from 'react'
-import AnswerOptions from '../components/AnswerOption'
 import quizQuestions from '../quizQuestions'
 import QuizCard from '../components/QuizCard'
 import Result from '../components/Result'
@@ -19,13 +18,16 @@ React.Component{
             'positive energy':0,
             'protection':0
           },
-          result: ''  
+          result: '' 
+         
     }
 
-    handleAnswerSelected=(event)=>{
-        event.persist()
-        // console.log(event.currentTarget)    
-        this.setUserAnswer(event.currentTarget.value);
+    handleAnswerSelected=(props)=>{
+        
+        //event.persist()
+        console.log(props.answer)
+        //(event.currentTarget.value)    
+        this.setUserAnswer(props.answer);
         if(this.state.questionId<quizQuestions.length){
             setTimeout(()=> this.setNextQuestion(),300)
         }
@@ -35,10 +37,11 @@ React.Component{
     }
 
     setUserAnswer=(answer)=>{
-        // console.log(answer)
+        
+        //console.log(answer)
         this.setState({answersCount:{
             ...this.state.answersCount,
-            answer:this.state.answersCount[answer]+1
+            [answer]:this.state.answersCount[answer]+1
         },
         answer:answer
     })
@@ -78,19 +81,19 @@ React.Component{
     }
 renderQuiz(){
     // console.log(quizQuestions[0].answers[0].type)
+    //console.log(this.state.answerOptions)
     return(
     <div className="quiz-list">
     
     <QuizCard content={this.state.question} answer={this.state.answer}
-    answerType={this.state.answerOptions.type}
+    
     answerOptions={this.state.answerOptions}
     questionId={this.state.questionId}
     questionTotal={quizQuestions.length}
     onAnswerSelected={this.handleAnswerSelected} />
+
     {/* // type={quizQuestions.answers.map((key)=>key.type)} /> */}
-     <ul className="answerOptions">
-     {this.state.answerOptions.map(answer=><AnswerOptions answer={answer}/>)}
-    </ul>
+   
   </div> 
     ) 
 };
