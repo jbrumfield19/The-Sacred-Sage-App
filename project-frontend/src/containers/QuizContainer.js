@@ -83,7 +83,7 @@ renderQuiz(){
     // console.log(quizQuestions[0].answers[0].type)
     //console.log(this.state.answerOptions)
     return(
-    <div className="quizlist">
+    <div className="quiz-list">
     
     <QuizCard content={this.state.question} answer={this.state.answer}
     
