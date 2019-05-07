@@ -30,23 +30,23 @@ var quizQuestions = [
         answers: [
             {
                 type: "self love",
-                content: "Pink"
+                content: "https://d2d00szk9na1qq.cloudfront.net/Product/901f74f5-4624-4367-8a96-6003ff550c30/Images/Large_AP-895.jpg"
             },
             {
                 type: "better relationships",
-                content: "Red"
+                content: "https://www.abc.net.au/radionational/image/6289622-4x3-340x255.png"
             },
             {
                 type: "finances",
-                content: "Violet"
+                content: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2snQCAT-9DlVsUrEI48x44F1Javr3sOzoMoeoFgTUfuyNQk5n"
             },
             {
                 type: "positive energy",
-                content: "Yellow"
+                content: "https://cdn.shopify.com/s/files/1/1394/6561/products/SUPERIOR-PAPER-BACK-PAPER-YELLOW-ORANGE-2.75M-BY-11M_6b15d153-d06e-46bd-be0b-6052eed927f7_grande.jpg?v=1486453287"
             },
             {
                 type: "protection",
-                content: "Green"
+                content: "https://images-na.ssl-images-amazon.com/images/I/41FAM8Tx18L._SX466_.jpg"
             }
         ]
     },
@@ -105,23 +105,23 @@ var quizQuestions = [
         answers: [
             {
                 type: "self love",
-                content: "Camping"
+                content: "https://bloximages.newyork1.vip.townnews.com/thesuburban.com/content/tncms/assets/v3/editorial/8/2c/82c0a4e4-a7c9-11e8-87ea-332f253ca443/5b804b2521a1b.image.jpg?resize=1200%2C800"
             },
             {
                 type: "better relationships",
-                content: "Beach"
+                content: "https://img1.coastalliving.timeinc.net/sites/default/files/styles/1000x1000/public/image/2016/10/main/lanikai-beach-oahu-hawaii-517639994.jpg?itok=8-KSfDXE"
             },
             {
                 type: "finances",
-                content: "Downtown"
+                content: "https://cdn.newsapi.com.au/image/v1/a20c6a2c7fbe77b27873543412dc81ea?width=1024"
             },
             {
                 type: "positive energy",
-                content: "Park"
+                content: "https://www.planetware.com/photos-large/USNY/new-york-city-central-park-1.jpg"
             },
             {
                 type: "protection",
-                content: "Pyramids"
+                content: "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/07/shutterstock_226914400.jpg"
             }
         ]
     },

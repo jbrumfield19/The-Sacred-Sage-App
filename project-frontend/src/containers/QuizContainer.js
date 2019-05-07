@@ -1,5 +1,4 @@
 import React from 'react'
-import AnswerOptions from '../components/AnswerOption'
 import quizQuestions from '../quizQuestions'
 import QuizCard from '../components/QuizCard'
 import Result from '../components/Result'
