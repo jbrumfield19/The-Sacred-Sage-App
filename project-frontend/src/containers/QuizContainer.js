@@ -88,8 +88,7 @@ React.Component{
         return answersCountKeys.filter(key=> answersCount[key]=== maxAnswerCount)
     }
 renderQuiz(){
-    // console.log(quizQuestions[0].answers[0].type)
-    //console.log(this.state.answerOptions)
+    if(this.state.questionId<=quizQuestions.length){
     return(
     <div className="quiz-list">
     
@@ -98,12 +97,12 @@ renderQuiz(){
     answerOptions={this.state.answerOptions}
     questionId={this.state.questionId}
     questionTotal={quizQuestions.length}
-    onAnswerSelected={this.handleAnswerSelected} />
-
-    {/* // type={quizQuestions.answers.map((key)=>key.type)} /> */}
-   
+    onAnswerSelected={this.handleAnswerSelected} /> 
   </div> 
-    ) 
+    ) }
+    else{
+        this.renderResult()
+    }
 };
 renderResult=()=>{
     return <Result quizResult={this.state.result} />
