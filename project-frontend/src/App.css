@@ -267,3 +267,8 @@ body {
   opacity: 1;
   right: 0;
 }
+.picture{
+  height:200px;
+  width:200px;
+  border-radius: 50%
+}

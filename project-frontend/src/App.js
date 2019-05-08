@@ -32,7 +32,7 @@ export default class App extends Component {
                     <Route path="/quiz" component={QuizContainer}/>
                     {/* <Route path="/product" component={ProductContainer}/> */}
                 </BrowserRouter>
-              <QuizContainer />
+             
             </div>
 
         );
