@@ -59,13 +59,21 @@ React.Component{
         const counter=this.state.counter + 1
         // console.log(this.state.answersCount)
         const questionId= this.state.questionId + 1
-        this.setState({
+        if(counter<=questionId-1){
+            this.setState({
            counter:counter,
            questionId:questionId,
            question: quizQuestions[counter].question,
            answerOptions:quizQuestions[counter].answers,
            answer:''
-        })   
+        })
+        
+    }
+
+    else{
+        const result=this.state.result
+       return  result 
+    }
     }
      componentWillMount(){
          this.setState({question:quizQuestions[0].question,
@@ -80,8 +88,7 @@ React.Component{
         return answersCountKeys.filter(key=> answersCount[key]=== maxAnswerCount)
     }
 renderQuiz(){
-    // console.log(quizQuestions[0].answers[0].type)
-    //console.log(this.state.answerOptions)
+    if(this.state.questionId<=quizQuestions.length){
     return(
     <div className="quiz-list">
     
@@ -90,12 +97,12 @@ renderQuiz(){
     answerOptions={this.state.answerOptions}
     questionId={this.state.questionId}
     questionTotal={quizQuestions.length}
-    onAnswerSelected={this.handleAnswerSelected} />
-
-    {/* // type={quizQuestions.answers.map((key)=>key.type)} /> */}
-   
+    onAnswerSelected={this.handleAnswerSelected} /> 
   </div> 
-    ) 
+    ) }
+    else{
+        this.renderResult()
+    }
 };
 renderResult=()=>{
     return <Result quizResult={this.state.result} />
