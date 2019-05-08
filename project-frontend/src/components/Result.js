@@ -8,13 +8,13 @@ import React from 'react'
         bundles: []
     }
 
-    componentDidMount(){
-        fetch("http://localhost:3000/ProductBundle")
-            .then( res => res.json())
-            .then( bundles => this.setState({
-            bundles: bundles
-        }))
-        }
+    // componentDidMount(){
+    //     fetch("http://localhost:3000/ProductBundle")
+    //         .then( res => res.json())
+    //         .then( bundles => this.setState({
+    //         bundles: bundles
+    //     }))
+    //     }
 
         getBundle(){
             this.state.bundles.filter(bundle =>(
