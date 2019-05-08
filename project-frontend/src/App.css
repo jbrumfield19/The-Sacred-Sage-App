@@ -159,8 +159,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 1.5rem 2.5rem 1.5rem 5rem;
-  font-size: 30px;
-  line-height: 1.5;
+  font-size: 25px;
+  line-height: 0.3;
 }
 
 .radioCustomButton ~ .radioCustomLabel:before {
@@ -267,8 +267,25 @@ body {
   opacity: 1;
   right: 0;
 }
+
 .picture{
-  height:200px;
   width:200px;
-  border-radius: 50%
+  height:200px;
+  border-radius: 50%;
+}
+
+.pictureContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sentenceContainer{
+
+}
+
+.productBundle{
+  background-color: #E6E6FA;
+  height: 800px;
+  background-size: 100% 100%
 }
