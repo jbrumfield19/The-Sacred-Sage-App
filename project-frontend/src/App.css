@@ -137,6 +137,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 1.5rem 2.5rem 1.5rem 5rem;
+
   font-size: 30px;
   line-height: 0.3;
 }
@@ -231,16 +232,20 @@ body {
   opacity: 1;
   right: 0;
 }
+
 .picture{
   width:200px;
   height:200px;
   border-radius: 50%;
 }
+
+
 .pictureContainer{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .sentenceContainer{
 }
 .productBundle{

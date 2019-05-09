@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-  export default class Result extends React.Component{
+export default class Result extends React.Component{
 
     state = {
         bundles: []
@@ -11,29 +11,32 @@ import React from 'react'
 
 
 
-     componentDidMount = () => {
+
+    componentDidMount(){
+
         fetch("http://localhost:3000/ProductBundle")
             .then(res => res.json())
             .then(bundles => this.setState({
                 bundles: bundles
             }))
-        }
+    
 
-        //     .then( res => 
-        //      this.setState({
-        //          bundles: res.json()
-        //         })
-        //     )
-        // }
+    //     .then( res =>
+    //      this.setState({
+    //          bundles: res.json()
+    //         })
+    //     )
+    // }
 
 
-        // getBundle(){
-        //     // console.log(this.state.bundles)
-        //    const bundle=this.state.bundles.filter(bundle =>(
-        //         bundle.name.toLowerCase().includes(this.props.quizResult)
-        //     ))
-        //     //    return bundle
-        // }
+    // getBundle(){
+    //     // console.log(this.state.bundles)
+    //    const bundle=this.state.bundles.filter(bundle =>(
+    //         bundle.name.toLowerCase().includes(this.props.quizResult)
+    //     ))
+    //     //    return bundle
+    // }
+
 
       render() {
         console.log(this.props.quizResult)
@@ -58,6 +61,11 @@ import React from 'react'
         </div>
 
 
-    )
-      }
+                {/* //<ProductContainer bundle = {bundle}/> */}
+
+            </div>
+
+
+        )
+    }
 }
