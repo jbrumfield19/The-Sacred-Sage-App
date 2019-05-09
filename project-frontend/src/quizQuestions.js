@@ -1,11 +1,10 @@
-
 var quizQuestions = [
     {
-        question: 'What are you most likely to do after you’ve done something wrong at work?',
+        question: 'What are you most likely to do after something has gone wrong at work?',
         answers: [
             {
                 type: 1,
-                content: "I think about all of the things that I did wrong"
+                content: "I obsess about all of the things that I did wrong"
             },
             {
                 type: 2,
@@ -51,7 +50,7 @@ var quizQuestions = [
         ]
     },
     {
-        question: 'Which affirmation would you like to most resonate with?',
+        question: 'Which affirmation would you like to resonate with?',
         answers: [
             {
                 type: 1,
@@ -96,12 +95,12 @@ var quizQuestions = [
             },
             {
                 type: 5,
-                content: "I feel that government is watching me"
+                content: "I feel that the government is watching me"
             }
         ]
     },
     {
-        question: 'What’s your most ideal vacation? ',
+        question: 'What’s your ideal vacation? ',
         answers: [
             {
                 type: 1,
@@ -130,15 +129,15 @@ var quizQuestions = [
         answers: [
             {
                 type: 1,
-                content: "Lungs,circulation,heart, immune system"
+                content: "Lungs, Circulation, Heart, Immune System"
             },
             {
                 type: 2,
-                content: "Throat,thyroid,mouth,teeth,jaw,ears"
+                content: "Throat, Thyroid, Mouth, Teeth, Jaw, Ears"
             },
             {
                 type: 3,
-                content: "Pituitary,eyes,sinuses,headaches"
+                content: "Pituitary, Eyes, Sinuses, Headaches"
             },
             {
                 type: 4,
@@ -146,7 +145,7 @@ var quizQuestions = [
             },
             {
                 type: 5,
-                content: "Ovaries, Hormonal imbalance, insomnia, nerves(anxiety), kidney, feet, knees, hips"
+                content: "Ovaries, Hormonal Imbalance, Insomnia, Nerves (Anxiety)"
             }
         ]
     },
@@ -171,7 +170,7 @@ var quizQuestions = [
             },
             {
                 type: 5,
-                content: "'The Man'"
+                content: "The Man"
             }
         ]
     }

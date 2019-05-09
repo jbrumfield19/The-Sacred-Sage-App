@@ -9,14 +9,23 @@ import AnswerOption from './AnswerOption';
               questionId={props.questionId} onAnswerSelected={props.onAnswerSelected} />
           )
       }
-    return (
+      return (
         <div key={props.questionId} >
-        <QuestionCount counter={props.questionId} total={props.questionTotal}/>
-      <h2 className="question">{props.content}</h2>
-        <ul className="answerOptions">
-        {props.answerOptions.map(renderAnswerOptions)}
-        </ul>
-      </div>
+            <QuestionCount counter={props.questionId} total={props.questionTotal}/>
+            <h2 className="question">{props.content}</h2>
+            <ul className="answerOptions">
+                {props.answerOptions[0].content.includes('https://') ? (
+                        <div className="pictureContainer">
+                            {props.answerOptions.map(renderAnswerOptions)}
+                        </div>
+                    ) : (
+                        <div className="sentenceContainer">
+                            {props.answerOptions.map(renderAnswerOptions)}
+                        </div>
+                    )
+                }
+            </ul>
+         </div>
     );
   }
   export default QuizCard;

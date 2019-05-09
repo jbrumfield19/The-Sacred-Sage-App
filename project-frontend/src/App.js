@@ -24,7 +24,7 @@ export default class App extends Component {
         
 
     render() {
-      let allProducts = this.state.products
+      //let allProducts = this.state.products
         return (
             <div className="App">
                 <BrowserRouter>
