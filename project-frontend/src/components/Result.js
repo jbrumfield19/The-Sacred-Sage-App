@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductContainer from '../containers/ProductContainer'
+//import ProductContainer from '../containers/ProductContainer'
 
 
 
@@ -11,13 +11,15 @@ export default class Result extends React.Component{
 
 
 
+
     componentDidMount(){
+
         fetch("http://localhost:3000/ProductBundle")
             .then(res => res.json())
             .then(bundles => this.setState({
                 bundles: bundles
             }))
-    }
+    
 
     //     .then( res =>
     //      this.setState({
@@ -35,18 +37,29 @@ export default class Result extends React.Component{
     //     //    return bundle
     // }
 
-    render() {
-        console.log(this.state.bundles)
+
+      render() {
+        console.log(this.props.quizResult)
         let allBundles = this.state.bundles
         let bundle = allBundles.find( bundle => bundle.id == this.props.quizResult)
-        if(!bundle) return <h1>Loading...</h1>
-        return(
-            <div className="productBundle">
-                <h4>{bundle.description}</h4>
-                <h2>{bundle.name}</h2>
+        if(!bundle) return <h1>It seems that you have balance in your life! That's great!</h1>
+    return(
+        <div className="productBundle"><br/>
+        <strong><h1 className="nameStyle">{bundle.name}</h1></strong>
+        <h4 className="productDescriptionOne">{bundle.descriptionone}</h4>
+        <h4 className="productDescriptionTwo">{bundle.descriptiontwo}</h4>
+        <h4 className="productDescriptionThree">{bundle.descriptionthree}</h4>
+        
+        <span>
+                <img className="image" src={bundle.image} alt=''/> <br />
+                </span>
 
-                <img width="100" src={bundle.image}/> <br/>
-                <a href={bundle.url}> Product Link </a>
+                <button className="otherButton"><a className='link' href={bundle.url}>Purchase Now</a></button>
+                
+        {/* //<ProductContainer bundle = {bundle}/> */}
+        
+        </div>
+
 
                 {/* //<ProductContainer bundle = {bundle}/> */}
 

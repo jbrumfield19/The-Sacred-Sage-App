@@ -59,7 +59,7 @@ React.Component{
         const counter=this.state.counter + 1
         // console.log(this.state.answersCount)
         const questionId= this.state.questionId + 1
-        if(counter<=questionId-1){
+        // if(counter<=questionId-1){
             this.setState({
            counter:counter,
            questionId:questionId,
@@ -68,12 +68,12 @@ React.Component{
            answer:''
         })
         
-    }
+    // }
 
-    else{
-        const result=this.state.result
-       return  result 
-    }
+    // else{
+    //     const result=this.state.result
+    //    return  result 
+    // }
     }
      componentWillMount(){
          this.setState({question:quizQuestions[0].question,

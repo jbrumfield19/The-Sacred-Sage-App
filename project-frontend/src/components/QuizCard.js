@@ -9,7 +9,7 @@ import AnswerOption from './AnswerOption';
               questionId={props.questionId} onAnswerSelected={props.onAnswerSelected} />
           )
       }
-    return (
+      return (
         <div key={props.questionId} >
             <QuestionCount counter={props.questionId} total={props.questionTotal}/>
             <h2 className="question">{props.content}</h2>
