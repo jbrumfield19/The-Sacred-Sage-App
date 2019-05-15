@@ -39,7 +39,7 @@ import React from 'react'
         console.log(this.props.quizResult)
         let allBundles = this.state.bundles
         let bundle = allBundles.find( bundle => bundle.id == this.props.quizResult)
-        if(!bundle) return <h1>It seems that you have balance in your life! That's great!</h1>
+        if(!bundle) return <div className='no-product'><h1 className='undetermined'>It seems that you have balance in your life! That's great!</h1></div>
     return(
         <div className="productBundle"><br/>
         <strong><h1 className="nameStyle">{bundle.name}</h1></strong>
