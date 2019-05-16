@@ -250,7 +250,7 @@ body {
 }
 .productBundle{
   background-image: url(https://i.ibb.co/GRNvHYp/Untitled-design.png);
-  height: 1000px;
+  height: 1200px;
   background-size: 100% 100%;
 }
 
@@ -342,4 +342,13 @@ body {
   color: lavender;
   text-decoration: none;
 }
-
+.undetermined{
+  font-family: 'Raleway', sans-serif;
+  color:darkmagenta;
+  font-size: 35px;
+}
+.no-product{
+  background-image: url(https://i.ibb.co/GRNvHYp/Untitled-design.png);
+  height: 2000px;
+  background-size: 100% 100%;
+}

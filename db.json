@@ -1,19 +1,52 @@
 {
-  "posts": [
+  "ProductBundle":
+    [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+        "id": 1,
+        "name": "The Love Bundle",
+        "descriptionone": "It looks like you need more work in the area of Self-Love in your life.", 
+        "descriptiontwo": "People who have more self-love tend to know what they think, feel, and want. They are mindful of who they are and act on this knowledge, rather than on what others want for them.",
+        "descriptionthree": "We would like to recommend this product to you to help you along your Self-Love journey:",
+          "image": "https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg",
+        "url": "https://urlzs.com/PMaA"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+        "id": 2,
+        "name": "The Relationship Bundle",
+        "descriptionone": "It looks like you need more work in the area of Relationships in your life.", 
+        "descriptiontwo": "People who have healthy relationships tend to be in relationships that give them a sense of well-being and purpose. In fact, it's possible that having more positive relationships can actually add years to your life.",
+        "descriptionthree": "We would like to recommend this product to you to help with your Relationship journey:",
+        "image": "https://i.etsystatic.com/18675401/r/il/b2aa34/1743520328/il_1588xN.1743520328_28jk.jpg",
+        "url": "https://urlzs.com/wTeC"
+    },
+    {
+        "id": 3,
+        "name": "The Finance Bundle",
+        "descriptionone": "It looks like you need more work in the area of Finances in your life.", 
+        "descriptiontwo": "People who have a handle on their finances take the time to set financial goals that they are working toward. If you do not have specific things that you are working for, it is difficult to motivate yourself.",
+        "descriptionthree": "We would like to recommend this product to you to help with your Financial journey:",
+        "image": "https://i.etsystatic.com/18675401/r/il/4c8350/1790980857/il_1588xN.1790980857_5io5.jpg",
+        "url": "https://urlzs.com/C3vp"
+    },
+    {
+        "id": 4,
+        "name": "The Positivity Bundle",
+        "descriptionone": "It looks like you need more work in the area of Positivity in your life.", 
+        "descriptiontwo": "People who have a positive outlook on life tend to realize that positive thinking doesn't mean that you keep your head in the sand and ignore life's less pleasant situations. Positive thinking just means that you approach unpleasantness in a more positive and productive way.",
+        "descriptionthree": "We would like to recommend this product to you to help with your Positivity journey:",
+        "image":"https://i.etsystatic.com/18675401/r/il/6545b3/1803420152/il_1588xN.1803420152_c1ew.jpg",
+        "url": "https://urlzs.com/YsqG"
+    },
+    {
+      "id": 5,
+      "name": "The Protection Bundle",
+      "descriptionone": "It looks like you need more work in the area of Protection in your life.", 
+      "descriptiontwo": "People who feel safe in life do not anticipate either harm or hurt, emotionally or physically. Feeling protected and having a sense well-being can't fully happen if one does not feel safe first.",
+      "descriptionthree": "We would like to recommend this product to you to help with your journey:",
+      "image":"https://i.etsystatic.com/18675401/r/il/d5c783/1790965753/il_1588xN.1790965753_79b0.jpg",
+      "url": "https://urlzs.com/QZ84"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+    ]
+    }
+  
+  
